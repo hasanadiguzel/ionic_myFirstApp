@@ -27,12 +27,17 @@ ionic docs search: router > Angular Navigation - Ionic Documentation
 routerLink 
 
 this.router.navigate: parametre gönderilebiliyor
+
 this.router.navigate(['/detay', {kullanici: this.ad}]);
 
 Sayfadan veri göndermek için Router, değer almak için ActivatedRoute
+
 this.gelenVeri = this.activatedRoute.snapshot.paramMap.get('kullanici');
 
 cli command;
+
 -ionic start myFirstApp blank
+
 -ionic serve
+
 -ionic g > page
